@@ -8,7 +8,7 @@ import larry
 import futurebestk
 
 # 파일로부터 apiKey, Secret 읽기
-with open ("coinpan/api.txt") as f: 
+with open ("Actual_Application/api.txt") as f: 
     lines = f.readlines()
     api_key = lines[0].strip()
     secret = lines[1].strip()
