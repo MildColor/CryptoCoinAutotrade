@@ -1,7 +1,7 @@
 import pyupbit
 import numpy as np
 
-df = pyupbit.get_ohlcv("KRW-BTC", "minute30", count= 200)
+df = pyupbit.get_ohlcv("KRW-BTC", "1d", count= 50)
 df['range'] = (df['high'] - df['low']) * 0.18
 df['target'] = df['open'] + df['range'].shift(1)
 
